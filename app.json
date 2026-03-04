@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "admin_ega_ads",
+    "slug": "admin_ega_ads",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "This app accesses your photo library to upload work images.",
+        "NSCameraUsageDescription": "This app uses the camera to capture site work photos.",
+        "NSMicrophoneUsageDescription": "This app needs microphone access for camera initialization."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "FOREGROUND_SERVICE",
+        "INTERNET",
+        "READ_MEDIA_IMAGES",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAZVIr0mw51BN0_RzVPbrnCVz6x1A0Rq_o"
+        }
+      },
+      "package": "com.keshav007.admin_ega_ads"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0b1b94b9-6786-430c-8aa3-54253af4471e"
+      }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow access to upload work photos.",
+          "cameraPermission": "Allow camera to take work photos."
+        }
+      ]
+    ]
+  }
+}
